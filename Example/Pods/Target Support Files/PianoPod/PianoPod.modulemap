@@ -1,0 +1,6 @@
+framework module PianoPod {
+  umbrella header "PianoPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

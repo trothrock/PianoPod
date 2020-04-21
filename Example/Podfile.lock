@@ -1,0 +1,16 @@
+PODS:
+  - PianoPod (0.1.0)
+
+DEPENDENCIES:
+  - PianoPod (from `../`)
+
+EXTERNAL SOURCES:
+  PianoPod:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  PianoPod: cd8cca9f09391357f1be04e716741ecd454e1e5d
+
+PODFILE CHECKSUM: c58deda6796243a609e3414030cbc5cf8a3ada5c
+
+COCOAPODS: 1.9.1

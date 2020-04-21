@@ -1,0 +1,6 @@
+framework module Pods_PianoPod_Example {
+  umbrella header "Pods-PianoPod_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

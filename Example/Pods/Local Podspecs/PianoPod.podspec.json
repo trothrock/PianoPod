@@ -1,0 +1,22 @@
+{
+  "name": "PianoPod",
+  "version": "0.1.0",
+  "summary": "A short description of PianoPod.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/theodore.rothrock@gmail.com/PianoPod",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "theodore.rothrock@gmail.com": "theodore.rothrock@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/theodore.rothrock@gmail.com/PianoPod.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "PianoPod/Classes/**/*"
+}
