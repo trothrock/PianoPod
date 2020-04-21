@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'PianoPod_Example' do
+  pod 'PianoPod', :path => '../'
+
+  target 'PianoPod_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
