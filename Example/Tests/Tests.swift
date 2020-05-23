@@ -1,5 +1,4 @@
 import XCTest
-import PianoPod
 
 class Tests: XCTestCase {
     

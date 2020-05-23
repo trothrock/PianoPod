@@ -1,9 +1,9 @@
 {
   "name": "PianoPod",
   "version": "0.1.0",
-  "summary": "A short description of PianoPod.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/theodore.rothrock@gmail.com/PianoPod",
+  "summary": "A customizable piano keyboard",
+  "description": "PianoPod provides a customizable piano keyboard for use in iOS applications.",
+  "homepage": "https://github.com/trothrock/PianoPod",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,13 @@
     "theodore.rothrock@gmail.com": "theodore.rothrock@gmail.com"
   },
   "source": {
-    "git": "https://github.com/theodore.rothrock@gmail.com/PianoPod.git",
+    "git": "https://github.com/trothrock/PianoPod.git",
     "tag": "0.1.0"
   },
+  "swift_versions": "4.0",
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
-  "source_files": "PianoPod/Classes/**/*"
+  "source_files": "PianoPod/Classes/**/*",
+  "swift_version": "4.0"
 }
