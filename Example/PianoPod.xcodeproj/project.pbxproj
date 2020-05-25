@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9F68B15F247C5E0B00F5E81F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B15E247C5E0B00F5E81F /* SettingsView.swift */; };
 		9F68B161247C727E00F5E81F /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B160247C727E00F5E81F /* Octave.swift */; };
+		9F68B163247C7A4200F5E81F /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F68B162247C7A4200F5E81F /* PianoKeyView.swift */; };
 		9FB1B818244EBB3E0012BCBA /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE63D9B244E9C6200227775 /* PianoView.swift */; };
 		9FB1B81A244EBCF60012BCBA /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE63D9D244EB8F300227775 /* Note.swift */; };
 		9FE63D98244E99E600227775 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
@@ -50,6 +51,7 @@
 		9336622BFE5CFB054EA6E253 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		9F68B15E247C5E0B00F5E81F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		9F68B160247C727E00F5E81F /* Octave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octave.swift; sourceTree = "<group>"; };
+		9F68B162247C7A4200F5E81F /* PianoKeyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
 		9FE63D9B244E9C6200227775 /* PianoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
 		9FE63D9D244EB8F300227775 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		A1F74CA84348A80D249AE28E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				9F68B15E247C5E0B00F5E81F /* SettingsView.swift */,
+				9F68B162247C7A4200F5E81F /* PianoKeyView.swift */,
 			);
 			name = "Example for PianoPod";
 			path = PianoPod;
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F68B163247C7A4200F5E81F /* PianoKeyView.swift in Sources */,
 				9F68B15F247C5E0B00F5E81F /* SettingsView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				9FB1B818244EBB3E0012BCBA /* PianoView.swift in Sources */,
