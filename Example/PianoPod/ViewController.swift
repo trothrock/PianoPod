@@ -12,7 +12,7 @@ import SwiftUI
 class ViewController: UIHostingController<PianoView> {
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder, rootView: PianoView(octave: 0, naturalKeyColor: .white, accidentalKeyColor: .black, backgroundColor: .gray))
+        super.init(coder: aDecoder, rootView: PianoView(naturalKeyColor: .yellow, accidentalKeyColor: .pink, backgroundColor: .purple, accentColor: .white))
     }
 
     override func viewDidLoad() {
