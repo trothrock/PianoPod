@@ -9,11 +9,11 @@ import SwiftUI
 
 struct PianoView: View {
     
-    var naturalKeyColor: Color
-    var accidentalKeyColor: Color
     var backgroundColor: Color
     var accentColor: Color
     
+    @State var naturalKeyColor: Color
+    @State var accidentalKeyColor: Color
     @State private var isPresentingSettings = false
     @State private var bottomOctave: Int = 0
     @State private var visibleOctaves: Int = 1
@@ -89,7 +89,7 @@ struct PianoView: View {
                     .frame(minHeight: 0)
             }
         }
-        .sheet(isPresented: $isPresentingSettings, content: { SettingsView(isPresented: self.$isPresentingSettings, bottomOctave: self.$bottomOctave, visibleOctaves: self.$visibleOctaves) })
+        .sheet(isPresented: $isPresentingSettings, content: { SettingsView(isPresented: self.$isPresentingSettings, bottomOctave: self.$bottomOctave, visibleOctaves: self.$visibleOctaves, naturalKeyColor: self.$naturalKeyColor, accidentalKeyColor: self.$accidentalKeyColor) })
         .background(backgroundColor)
     }
     
@@ -116,7 +116,7 @@ struct PianoView: View {
 struct PianoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PianoView(naturalKeyColor: .yellow, accidentalKeyColor: .pink, backgroundColor: .purple, accentColor: .white)
+            PianoView(backgroundColor: .purple, accentColor: .white, naturalKeyColor: .yellow, accidentalKeyColor: .pink)
               .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
               .previewDisplayName("iPhone 11 Pro Max")
         }
