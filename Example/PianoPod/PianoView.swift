@@ -111,6 +111,11 @@ struct PianoView: View {
         return naturalKeyWidth(for: size) * 0.3
     }
     
+    private func keyboardSize(for size: CGSize) -> CGSize {
+        let keyWidth = self.naturalKeyWidth(for: size)
+        return CGSize(width: (keyWidth * 7) * CGFloat(self.visibleOctaves), height: 0)
+    }
+    
 }
 
 struct PianoView_Previews: PreviewProvider {

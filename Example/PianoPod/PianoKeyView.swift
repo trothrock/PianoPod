@@ -65,14 +65,16 @@ struct PianoKeyView: View {
     }
     
     var body: some View {
-        Button(action: {
+        let strokeColor: Color = color != .black ? .black : .white
+        
+        return Button(action: {
             print("Play \(self.note.pitch.rawValue) \(self.note.octave)")
         }, label: {
             PianoKeyShape(isAccidental: isAccidental, radius: radius)
                 .foregroundColor(self.color)
                 .overlay(
                     PianoKeyShape(isAccidental: isAccidental, radius: radius)
-                        .stroke(Color.black, lineWidth: 0.5)
+                        .stroke(strokeColor, lineWidth: 0.5)
                 )
         })
         .frame(width: isAccidental ? accidentalKeySize.width : naturalKeySize.width, height: isAccidental ? accidentalKeySize.height : naturalKeySize.height)

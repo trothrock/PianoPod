@@ -25,19 +25,19 @@ struct SettingsView: View {
         NavigationView {
             VStack(spacing: 20) {
                 Group {
-                    Stepper(value: $bottomOctave, in: -3...3, label: {
-                        Text("Bottom octave: ")
+                    Stepper(value: $visibleOctaves, in: 1...3, label: {
+                        Text("Visible octaves: ")
                             .bold()
-                        Text("\(bottomOctave)")
+                        Text("\(visibleOctaves)")
                     })
                     .frame(height: menuItemHeight)
                     
                     Divider()
                     
-                    Stepper(value: $visibleOctaves, in: 1...3, label: {
-                        Text("Visible octaves: ")
+                    Stepper(value: $bottomOctave, in: -3...3, label: {
+                        Text("Bottom note: ")
                             .bold()
-                        Text("\(visibleOctaves)")
+                        Text("C\(bottomOctave)")
                     })
                     .frame(height: menuItemHeight)
                     
