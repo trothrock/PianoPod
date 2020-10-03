@@ -8,11 +8,12 @@
 
 import UIKit
 import SwiftUI
+import PianoPod
 
 class ViewController: UIHostingController<PianoView> {
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder, rootView: PianoView(backgroundColor: .white, accentColor: .blue, naturalKeyColor: .white, accidentalKeyColor: .black))
+        super.init(coder: aDecoder, rootView: PianoPod.pianoView(visibleOctaves: 2))
     }
 
     override func viewDidLoad() {

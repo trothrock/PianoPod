@@ -7,16 +7,17 @@
 
 import SwiftUI
 
-struct PianoView: View {
+public struct PianoView: View {
     
     var backgroundColor: Color
     var accentColor: Color
     
     @State var naturalKeyColor: Color
     @State var accidentalKeyColor: Color
+    @State var visibleOctaves: Int = 1
+    @State var settingsEnabled: Bool = true
     @State private var isPresentingSettings = false
     @State private var bottomOctave: Int = 0
-    @State private var visibleOctaves: Int = 1
     
     private let toolbarControlHeight: CGFloat  = 35
     private let toolbarPadding: CGFloat  = 7
@@ -33,22 +34,16 @@ struct PianoView: View {
         return result
     }
     
-    var body: some View {
+    public var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
-                HStack() {
-                    Spacer()
-                    Button(action: {
-                        self.isPresentingSettings = true
-                    }, label: {
-                        Image(systemName: "gear")
-                            .resizable()
-                    })
-                    .frame(width: self.toolbarControlHeight, height: self.toolbarControlHeight)
-                    .foregroundColor(self.accentColor)
-                    .padding(self.toolbarPadding)
+                if self.settingsEnabled {
+                    HStack() {
+                        Spacer()
+                        SettingsIconButton(isPresentingSettings: self.$isPresentingSettings, toolbarControlHeight: self.toolbarControlHeight, toolbarPadding: self.toolbarPadding, accentColor: self.accentColor)
+                    }
+                    .frame(height: self.toolbarHeight)
                 }
-                .frame(height: self.toolbarHeight)
                 
                 Spacer()
                     .frame(minHeight: 0)
@@ -114,6 +109,27 @@ struct PianoView: View {
     private func keyboardSize(for size: CGSize) -> CGSize {
         let keyWidth = self.naturalKeyWidth(for: size)
         return CGSize(width: (keyWidth * 7) * CGFloat(self.visibleOctaves), height: 0)
+    }
+    
+}
+
+struct SettingsIconButton: View {
+    
+    @Binding var isPresentingSettings: Bool
+    var toolbarControlHeight: CGFloat
+    var toolbarPadding: CGFloat
+    var accentColor: Color
+    
+    var body: some View {
+        Button(action: {
+            self.isPresentingSettings = true
+        }, label: {
+            Image(systemName: "gear")
+                .resizable()
+        })
+        .frame(width: self.toolbarControlHeight, height: self.toolbarControlHeight)
+        .foregroundColor(self.accentColor)
+        .padding(self.toolbarPadding)
     }
     
 }
