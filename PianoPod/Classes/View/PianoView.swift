@@ -16,14 +16,84 @@ struct PianoView: View {
     @State var accidentalKeyColor: Color
     @State var visibleOctaves: Int = 1
     @State var settingsEnabled: Bool = true
+    
+    var body: some View {
+        GeometryReader { geometry in
+            VStack(spacing: 0) {
+                if settingsEnabled {
+                    SettingsHeaderView(isPresentingSettings: $isPresentingSettings,
+                                       toolbarControlHeight: Constants.toolbarControlHeight,
+                                       toolbarPadding: Constants.toolbarPadding,
+                                       accentColor: accentColor)
+                }
+                
+                Spacer()
+                    .frame(minHeight: 0)
+                
+                ZStack(alignment: .top) {
+                    HStack(spacing: 0) {
+                        ForEach(octaves, id: \.octaveIndex) { octave in
+                                ForEach(octave.naturalNotes, id: \.id) { note in
+                                    PianoKeyView(note: note,
+                                                 color: naturalKeyColor,
+                                                 naturalKeyWidth: naturalKeyWidth(for: geometry.size))
+                                }
+                        }
+                    }
+                    HStack(spacing: 0) {
+                        ForEach(octaves, id: \.octaveIndex) { octave in
+                            HStack(spacing: accidentalInterKeySpacing(for: geometry.size)) {
+                                Rectangle()
+                                .frame(width: accidentalEndSpacing(for: geometry.size), height: 0)
+                                
+                                ForEach(octave.lowerAccidentals, id: \.id) { note in
+                                    PianoKeyView(note: note,
+                                                 color: accidentalKeyColor,
+                                                 naturalKeyWidth: naturalKeyWidth(for: geometry.size))
+                                }
+                                
+                                Spacer()
+                                
+                                ForEach(octave.upperAccidentals, id: \.id) { note in
+                                    PianoKeyView(note: note,
+                                                 color: accidentalKeyColor,
+                                                 naturalKeyWidth: naturalKeyWidth(for: geometry.size))
+        
+                                }
+                                
+                                Rectangle()
+                                    .frame(width: accidentalEndSpacing(for: geometry.size), height: 0)
+                            }
+                        }
+                    }.frame(width: (naturalKeyWidth(for: geometry.size) * 7) * CGFloat(visibleOctaves))
+                }
+
+                Spacer()
+                    .frame(minHeight: 0)
+            }
+        }
+        .sheet(isPresented: $isPresentingSettings,
+               content: { SettingsView(isPresented: $isPresentingSettings,
+                                       bottomOctave: $bottomOctave,
+                                       visibleOctaves: $visibleOctaves,
+                                       naturalKeyColor: $naturalKeyColor,
+                                       accidentalKeyColor: $accidentalKeyColor)
+        })
+        .background(backgroundColor)
+    }
+    
+    // MARK: - Private
+    
+    private enum Constants {
+        static let toolbarControlHeight: CGFloat = 35
+        static let toolbarPadding: CGFloat = 7
+    }
+    
     @State private var isPresentingSettings = false
     @State private var bottomOctave: Int = 0
     
-    private let toolbarControlHeight: CGFloat  = 35
-    private let toolbarPadding: CGFloat  = 7
-    
     private var toolbarHeight: CGFloat {
-        return settingsEnabled ? toolbarControlHeight + (toolbarPadding * 2) : 0
+        return settingsEnabled ? Constants.toolbarControlHeight + (Constants.toolbarPadding * 2) : 0
     }
     
     private var octaves: [Octave] {
@@ -32,56 +102,6 @@ struct PianoView: View {
             result.append(Octave(octaveIndex: octaveIndex))
         }
         return result
-    }
-    
-    var body: some View {
-        GeometryReader { geometry in
-            VStack(spacing: 0) {
-                if self.settingsEnabled {
-                    SettingsHeaderView(isPresentingSettings: self.$isPresentingSettings, toolbarControlHeight: self.toolbarControlHeight, toolbarPadding: self.toolbarPadding, accentColor: self.accentColor)
-                }
-                
-                Spacer()
-                    .frame(minHeight: 0)
-                
-                ZStack(alignment: .top) {
-                    HStack(spacing: 0) {
-                        ForEach(self.octaves, id: \.octaveIndex) { octave in
-                                ForEach(octave.naturalNotes, id: \.id) { note in
-                                    PianoKeyView(note: note, color: self.naturalKeyColor, naturalKeyWidth: self.naturalKeyWidth(for: geometry.size))
-                                }
-                        }
-                    }
-                    HStack(spacing: 0) {
-                        ForEach(self.octaves, id: \.octaveIndex) { octave in
-                            HStack(spacing: self.accidentalInterKeySpacing(for: geometry.size)) {
-                                Rectangle()
-                                .frame(width: self.accidentalEndSpacing(for: geometry.size), height: 0)
-                                
-                                ForEach(octave.lowerAccidentals, id: \.id) { note in
-                                    PianoKeyView(note: note, color: self.accidentalKeyColor, naturalKeyWidth: self.naturalKeyWidth(for: geometry.size))
-                                }
-                                
-                                Spacer()
-                                
-                                ForEach(octave.upperAccidentals, id: \.id) { note in
-                                    PianoKeyView(note: note, color: self.accidentalKeyColor, naturalKeyWidth: self.naturalKeyWidth(for: geometry.size))
-        
-                                }
-                                
-                                Rectangle()
-                                    .frame(width: self.accidentalEndSpacing(for: geometry.size), height: 0)
-                            }
-                        }
-                    }.frame(width: (self.naturalKeyWidth(for: geometry.size) * 7) * CGFloat(self.visibleOctaves))
-                }
-
-                Spacer()
-                    .frame(minHeight: 0)
-            }
-        }
-        .sheet(isPresented: $isPresentingSettings, content: { SettingsView(isPresented: self.$isPresentingSettings, bottomOctave: self.$bottomOctave, visibleOctaves: self.$visibleOctaves, naturalKeyColor: self.$naturalKeyColor, accidentalKeyColor: self.$accidentalKeyColor) })
-        .background(backgroundColor)
     }
     
     private func naturalKeyWidth(for size: CGSize) -> CGFloat {
@@ -103,8 +123,8 @@ struct PianoView: View {
     }
     
     private func keyboardSize(for size: CGSize) -> CGSize {
-        let keyWidth = self.naturalKeyWidth(for: size)
-        return CGSize(width: (keyWidth * 7) * CGFloat(self.visibleOctaves), height: 0)
+        let keyWidth = naturalKeyWidth(for: size)
+        return CGSize(width: (keyWidth * 7) * CGFloat(visibleOctaves), height: 0)
     }
     
 }
@@ -120,14 +140,14 @@ struct SettingsHeaderView: View {
         HStack() {
             Spacer()
             Button(action: {
-                self.isPresentingSettings = true
+                isPresentingSettings = true
             }, label: {
                 Image(systemName: "gear")
                     .resizable()
             })
-            .frame(width: self.toolbarControlHeight, height: self.toolbarControlHeight)
-            .foregroundColor(self.accentColor)
-            .padding(self.toolbarPadding)
+            .frame(width: toolbarControlHeight, height: toolbarControlHeight)
+            .foregroundColor(accentColor)
+            .padding(toolbarPadding)
         }
         .frame(height: toolbarControlHeight + (toolbarPadding * 2))
     }
@@ -137,9 +157,12 @@ struct SettingsHeaderView: View {
 struct PianoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PianoView(backgroundColor: .purple, accentColor: .white, naturalKeyColor: .yellow, accidentalKeyColor: .pink)
-              .previewDevice(PreviewDevice(rawValue: "iPhone 11 Pro Max"))
-              .previewDisplayName("iPhone 11 Pro Max")
+            PianoView(backgroundColor: .purple,
+                      accentColor: .white,
+                      naturalKeyColor: .yellow,
+                      accidentalKeyColor: .pink)
+              .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
+              .previewDisplayName("iPhone 14 Pro")
         }
     }
     

@@ -15,37 +15,45 @@ struct ColorPickerView: View {
     
     var body: some View {
         NavigationView {
-            VStack(spacing: 20) {
+            VStack(spacing: Constants.buttonPadding) {
                 Spacer()
                     .frame(maxHeight: .infinity)
                 HStack {
                     ForEach([Color.red, Color.orange, Color.yellow], id: \.self) { color in
-                        ColorSelectionButton(fillColor: color, selectedColor: self.$selectedColor, presentationFlag: self.$isPresented)
+                        ColorSelectionButton(fillColor: color, selectedColor: $selectedColor, presentationFlag: $isPresented)
                     }
                 }
                 HStack {
                     ForEach([Color.green, Color.blue, Color.purple], id: \.self) { color in
-                        ColorSelectionButton(fillColor: color, selectedColor: self.$selectedColor, presentationFlag: self.$isPresented)
+                        ColorSelectionButton(fillColor: color, selectedColor: $selectedColor, presentationFlag: $isPresented)
                     }
                 }
                 HStack {
                     ForEach([Color.pink, Color.white, Color.black], id: \.self) { color in
-                        ColorSelectionButton(fillColor: color, selectedColor: self.$selectedColor, presentationFlag: self.$isPresented)
+                        ColorSelectionButton(fillColor: color, selectedColor: $selectedColor, presentationFlag: $isPresented)
                     }
                 }
                 Spacer()
                     .frame(maxHeight: .infinity)
                 
             }
-            .padding([.leading, .trailing], 20)
+            .padding([.leading, .trailing], Constants.buttonPadding)
             .navigationBarItems(trailing:
                 Button(action: {
-                    self.isPresented = false
-                }, label: { Text("Close") })
+                    isPresented = false
+                }, label: { Text(Constants.closeButtonTitle) })
             )
-            .navigationBarTitle("Choose a color")
+            .navigationBarTitle(Constants.viewTitle)
         }
         
+    }
+    
+    // MARK: - Private
+    
+    private enum Constants {
+        static let closeButtonTitle = "Close"
+        static let viewTitle = "Choose a color"
+        static let buttonPadding: CGFloat = 20
     }
 }
 
@@ -57,8 +65,8 @@ struct ColorSelectionButton: View {
     
     var body: some View {
         Button(action: {
-            self.selectedColor = self.fillColor
-            self.presentationFlag = false
+            selectedColor = fillColor
+            presentationFlag = false
         }, label: {
             BorderedCircleView(fillColor: fillColor)
         })
@@ -67,6 +75,7 @@ struct ColorSelectionButton: View {
 
 struct SwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorPickerView(isPresented: .constant(true), selectedColor: .constant(.red))
+        ColorPickerView(isPresented: .constant(true),
+                        selectedColor: .constant(.red))
     }
 }
