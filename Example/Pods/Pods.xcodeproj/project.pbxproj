@@ -7,22 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C50BD3FAE28219BF6E4356F4BF238C5 /* PianoPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DB2FB5AAFEA7B5D3EC7E6357D031DEB /* PianoPod-dummy.m */; };
-		11841A8D2DC1CD3EFC003B4FE787B1A6 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69752FEF255548763B2D20D586786513 /* Octave.swift */; };
-		1A1F5BCC56DE59C784956E06D65B8F6A /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276D2F134E9660D2CB2308AB529D5FCF /* PianoView.swift */; };
-		32F3DB8E32004EB2C8C00DEEAF7D0FE3 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0787DF0B486A5061176AB6E39BF26AE /* ColorPickerView.swift */; };
+		24C879780050867850197D8284BA2EAA /* PianoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5C13A675A20F9077B4C8F3DC757349 /* PianoView.swift */; };
+		2689152930304CDF4151F40705F53D46 /* Octave.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B08CE5E097B38B92421CC196E32F3 /* Octave.swift */; };
+		3577A5C6A574A4D7F3635BEFD9C93917 /* PianoPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 76A56BA82956E11658BBA19FDAC9E8E5 /* PianoPod.bundle */; };
 		3DCA89A8744CE4CC2460EEE7C4B76F01 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		3E180BC3719EA57C553E2FAAD5CC65D3 /* Pods-PianoPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 327CFA659702ABE2662974AECCF66349 /* Pods-PianoPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		45451B2C9AA2FDA7119D894C83219201 /* Pods-PianoPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5562A9825A939E0950264FA28AFA10BC /* Pods-PianoPod_Example-dummy.m */; };
-		4B6F9E0C17ECC1A308107CE98DCDB5EB /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C42FC128BDE6DB03E21F0747F7303A /* PianoKeyView.swift */; };
-		5FE7F1FA9C7EE71AA73C33D055D71A6B /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D66CB6FDF07C0CC0D1CE4227D6A8A7 /* Note.swift */; };
+		52446718414ABC73987321ACB7D1AFE2 /* PianoKeyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332B82536CE42820B6A348915D1AF684 /* PianoKeyView.swift */; };
+		5FF08E203B4621B082376329AA3A1323 /* c_0.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8D7AF19AED4535D73978537C5705E647 /* c_0.mp3 */; };
+		85832843F365B301F93EE89528D988EE /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2EEB2A58A3B9C829307ED7F446F8111 /* AudioManager.swift */; };
+		8BBA985C92453B426322F6FF2B12A39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		8F3F92DF68D5C2BE574F328BFBF1031D /* Pods-PianoPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8741294808B99DF1A2E65B17229FD74D /* Pods-PianoPod_Tests-dummy.m */; };
-		B75139BD2931E3D8ADF8D31AC644E7C0 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7A23BD5876B9B826E6FD59A078EB01 /* SettingsView.swift */; };
-		B7C117CF22EC3EFEA16F83280D561F01 /* PianoPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10859D8785DE3EF77B77A338FA52452 /* PianoPod.swift */; };
-		B92C8B2D6BB405FCC36CF2990F5D1165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9041C86617F326FA0D7759179BC52541 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8075A2DAC180C00F33B9D6B279AAA20 /* Note.swift */; };
+		907836E2705E0292A81B58AB9A1F2427 /* PianoPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0974F542950E1B0C82BFC959F18630 /* PianoPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5287172F20516ACBB9922FB99908406 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A158AFD4C645673396862B782F334E7D /* SettingsView.swift */; };
+		B156F9498BC26355DF3461A9B2437C05 /* PianoPod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B0D560B373A91021558F25D0E118AA /* PianoPod.swift */; };
 		BE1D988736D1AF4B27F13B9AA565CFA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C5BB26CBECEFD4B0EE20D24C42BEF59D /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FA25B48B979810CD3D422A88909D7B /* ColorPickerView.swift */; };
 		C7253ED4558B3DE224ADD7F312DE7CEB /* Pods-PianoPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15C660554F6BD07644E04A71F39C4164 /* Pods-PianoPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2757B3782B3B1470058A780765B4954 /* PianoPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B72A2D72D571DFCAB9D4D3044F5A037 /* PianoPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C8AA9FEF91F09044EF23365185F733D0 /* PianoPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B297D3608AD5BCA3DCDF64135D37CD40 /* PianoPod-dummy.m */; };
+		D4E95D207D1F3C88093A5A51382F1A0C /* PianoPodEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C8F0B36BD3FC3D7478392DB5B3007AA /* PianoPodEnvironment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +36,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 20493A52A9AA5012B0E532437EC87006;
 			remoteInfo = "Pods-PianoPod_Example";
+		};
+		A29A10D99ED132864FA5BE590067ECBF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62F00F0252A092DDD3D881A14FAA00EC;
+			remoteInfo = "PianoPod-PianoPod";
 		};
 		F9AC8528CD785AAD9C2C4D536FEA2F79 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -43,53 +54,57 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00F289CA6E8A4FB472215F4F3F5FADFD /* PianoPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PianoPod.debug.xcconfig; sourceTree = "<group>"; };
-		02CDDDA5886D2D993329FFCBD44F6D12 /* PianoPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PianoPod-Info.plist"; sourceTree = "<group>"; };
 		0A901181B5BB918D023B061F1ACFB1A5 /* Pods-PianoPod_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PianoPod_Tests-Info.plist"; sourceTree = "<group>"; };
 		0BF83BBBA6BA6D7FDD629DFDBFF11719 /* Pods-PianoPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PianoPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		11590B5CEAFFEC40CC3068B7FC4AEF72 /* PianoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PianoPod.framework; path = PianoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5C13A675A20F9077B4C8F3DC757349 /* PianoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PianoView.swift; sourceTree = "<group>"; };
+		11590B5CEAFFEC40CC3068B7FC4AEF72 /* PianoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PianoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		15C660554F6BD07644E04A71F39C4164 /* Pods-PianoPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PianoPod_Tests-umbrella.h"; sourceTree = "<group>"; };
 		160FA26A26EB9ED6A42723E115663DEA /* Pods-PianoPod_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PianoPod_Example-Info.plist"; sourceTree = "<group>"; };
 		18E680B1B592C324235B67C06C4614BD /* Pods-PianoPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PianoPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1911E1803E10E15BB8D583558920B3B0 /* Pods-PianoPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PianoPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		1B72A2D72D571DFCAB9D4D3044F5A037 /* PianoPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PianoPod-umbrella.h"; sourceTree = "<group>"; };
+		1B9E2508038E94953895C431CDF0D769 /* PianoPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PianoPod.debug.xcconfig; sourceTree = "<group>"; };
 		25A444759B4BCBFAC082495FBF72344C /* Pods-PianoPod_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PianoPod_Example-frameworks.sh"; sourceTree = "<group>"; };
-		276D2F134E9660D2CB2308AB529D5FCF /* PianoView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PianoView.swift; path = PianoPod/Classes/PianoView.swift; sourceTree = "<group>"; };
-		27D66CB6FDF07C0CC0D1CE4227D6A8A7 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Note.swift; path = PianoPod/Classes/Note.swift; sourceTree = "<group>"; };
+		2FA9AA3B568A36FEE8DE8E3A7740BAC0 /* PianoPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PianoPod.modulemap; sourceTree = "<group>"; };
+		308414858B3662E9CB54B4FE06C4018B /* PianoPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PianoPod-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		327CFA659702ABE2662974AECCF66349 /* Pods-PianoPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PianoPod_Example-umbrella.h"; sourceTree = "<group>"; };
-		4BA9B0070D2AAEAD53F735026B9DA4DD /* PianoPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PianoPod.release.xcconfig; sourceTree = "<group>"; };
+		332B82536CE42820B6A348915D1AF684 /* PianoKeyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PianoKeyView.swift; sourceTree = "<group>"; };
+		4954837F7D609EFC9B1774F59A098883 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5562A9825A939E0950264FA28AFA10BC /* Pods-PianoPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PianoPod_Example-dummy.m"; sourceTree = "<group>"; };
-		56FD311F03AD1AF32F3531FA09B47DAA /* PianoPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PianoPod-prefix.pch"; sourceTree = "<group>"; };
-		5A7A23BD5876B9B826E6FD59A078EB01 /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = PianoPod/Classes/SettingsView.swift; sourceTree = "<group>"; };
-		5F1796F8AAAAE9F5219A0B5358C804BE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		69752FEF255548763B2D20D586786513 /* Octave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octave.swift; path = PianoPod/Classes/Octave.swift; sourceTree = "<group>"; };
+		5B0974F542950E1B0C82BFC959F18630 /* PianoPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PianoPod-umbrella.h"; sourceTree = "<group>"; };
+		63748B1D7BE6940E38F761FA353E897A /* PianoPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = PianoPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		6C8F0B36BD3FC3D7478392DB5B3007AA /* PianoPodEnvironment.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PianoPodEnvironment.swift; path = PianoPod/Classes/PianoPodEnvironment.swift; sourceTree = "<group>"; };
 		6CB2FA53DD5A9D95E427E283F1D660D1 /* Pods-PianoPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PianoPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7552707ABB84FFAE3C963F0293870954 /* Pods-PianoPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PianoPod_Tests.modulemap"; sourceTree = "<group>"; };
-		7D98F1085D18A9701DDAC788B34C9978 /* Pods_PianoPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PianoPod_Example.framework; path = "Pods-PianoPod_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7DB2FB5AAFEA7B5D3EC7E6357D031DEB /* PianoPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PianoPod-dummy.m"; sourceTree = "<group>"; };
-		842AE603ACE0B2FFD47D69EF4DA0AC7A /* PianoPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = PianoPod.modulemap; sourceTree = "<group>"; };
+		76A56BA82956E11658BBA19FDAC9E8E5 /* PianoPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PianoPod.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D98F1085D18A9701DDAC788B34C9978 /* Pods_PianoPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8431444D61DE4D6C5F1EA354D572967A /* Pods-PianoPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PianoPod_Example.modulemap"; sourceTree = "<group>"; };
 		8741294808B99DF1A2E65B17229FD74D /* Pods-PianoPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PianoPod_Tests-dummy.m"; sourceTree = "<group>"; };
 		885653787D6557B5733341D30BAE795B /* Pods-PianoPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PianoPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		926B51DFF541586916E7350E14CD1859 /* PianoPod.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = PianoPod.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A28FC88554C8E6AD05A56567C77E387 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		8D7AF19AED4535D73978537C5705E647 /* c_0.mp3 */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = audio.mp3; name = c_0.mp3; path = PianoPod/Assets/Audio/c_0.mp3; sourceTree = "<group>"; };
+		96B0D560B373A91021558F25D0E118AA /* PianoPod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PianoPod.swift; path = PianoPod/Classes/PianoPod.swift; sourceTree = "<group>"; };
+		9991BB46CD56F799B84181E7C21F440F /* PianoPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PianoPod-prefix.pch"; sourceTree = "<group>"; };
 		9B24D72F58EB92DADC37185213E563B0 /* Pods-PianoPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PianoPod_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A9C42FC128BDE6DB03E21F0747F7303A /* PianoKeyView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PianoKeyView.swift; path = PianoPod/Classes/PianoKeyView.swift; sourceTree = "<group>"; };
+		9C21A4C775ACDF5C5A4A9978A1CF8C44 /* PianoPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PianoPod.release.xcconfig; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A158AFD4C645673396862B782F334E7D /* SettingsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A95BBF9BB5508667232B466CB7EFF610 /* ResourceBundle-PianoPod-PianoPod-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-PianoPod-PianoPod-Info.plist"; sourceTree = "<group>"; };
 		AE537B1BA7EDEDC8E7FB8CC018692159 /* Pods-PianoPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PianoPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		CD5C5476519864A327D053E7317E7BA6 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		E0787DF0B486A5061176AB6E39BF26AE /* ColorPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorPickerView.swift; path = PianoPod/Classes/ColorPickerView.swift; sourceTree = "<group>"; };
-		E0C67F046D1FFC6533EC60701642CDB9 /* Pods_PianoPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_PianoPod_Tests.framework; path = "Pods-PianoPod_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E10859D8785DE3EF77B77A338FA52452 /* PianoPod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PianoPod.swift; path = PianoPod/Classes/PianoPod.swift; sourceTree = "<group>"; };
+		B297D3608AD5BCA3DCDF64135D37CD40 /* PianoPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PianoPod-dummy.m"; sourceTree = "<group>"; };
+		B6FA25B48B979810CD3D422A88909D7B /* ColorPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		BF2B08CE5E097B38B92421CC196E32F3 /* Octave.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Octave.swift; sourceTree = "<group>"; };
+		E0C67F046D1FFC6533EC60701642CDB9 /* Pods_PianoPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PianoPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EEB2A58A3B9C829307ED7F446F8111 /* AudioManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AudioManager.swift; path = PianoPod/Classes/AudioManager.swift; sourceTree = "<group>"; };
+		E8075A2DAC180C00F33B9D6B279AAA20 /* Note.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		FC4FB29DCA3F1172DCFF20A0F738632F /* Pods-PianoPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PianoPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6A08245A11052D6B9E6E0C6C10F3906B /* Frameworks */ = {
+		5220403FABAC5DB35969E8D9AE9EC0CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B92C8B2D6BB405FCC36CF2990F5D1165 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +124,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D2CBE7F196C04BD0ED31B93621F7128A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BBA985C92453B426322F6FF2B12A39A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04FB47ED476F44C97D7C25D5C40021D5 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				8A28FC88554C8E6AD05A56567C77E387 /* LICENSE */,
+				63748B1D7BE6940E38F761FA353E897A /* PianoPod.podspec */,
+				4954837F7D609EFC9B1774F59A098883 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		1715A010640484FB16A80C383D9A02A3 /* Pods-PianoPod_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,19 +162,46 @@
 			path = "Target Support Files/Pods-PianoPod_Example";
 			sourceTree = "<group>";
 		};
-		2C0693DD5F5C7C62FB8CB125A8DE22E9 /* Support Files */ = {
+		26A6FD85CBB4120B786D1C06F078D350 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				842AE603ACE0B2FFD47D69EF4DA0AC7A /* PianoPod.modulemap */,
-				7DB2FB5AAFEA7B5D3EC7E6357D031DEB /* PianoPod-dummy.m */,
-				02CDDDA5886D2D993329FFCBD44F6D12 /* PianoPod-Info.plist */,
-				56FD311F03AD1AF32F3531FA09B47DAA /* PianoPod-prefix.pch */,
-				1B72A2D72D571DFCAB9D4D3044F5A037 /* PianoPod-umbrella.h */,
-				00F289CA6E8A4FB472215F4F3F5FADFD /* PianoPod.debug.xcconfig */,
-				4BA9B0070D2AAEAD53F735026B9DA4DD /* PianoPod.release.xcconfig */,
+				2FA9AA3B568A36FEE8DE8E3A7740BAC0 /* PianoPod.modulemap */,
+				B297D3608AD5BCA3DCDF64135D37CD40 /* PianoPod-dummy.m */,
+				308414858B3662E9CB54B4FE06C4018B /* PianoPod-Info.plist */,
+				9991BB46CD56F799B84181E7C21F440F /* PianoPod-prefix.pch */,
+				5B0974F542950E1B0C82BFC959F18630 /* PianoPod-umbrella.h */,
+				1B9E2508038E94953895C431CDF0D769 /* PianoPod.debug.xcconfig */,
+				9C21A4C775ACDF5C5A4A9978A1CF8C44 /* PianoPod.release.xcconfig */,
+				A95BBF9BB5508667232B466CB7EFF610 /* ResourceBundle-PianoPod-PianoPod-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PianoPod";
+			sourceTree = "<group>";
+		};
+		29E3D14AB337D1196F8C650DDCB08E19 /* PianoPod */ = {
+			isa = PBXGroup;
+			children = (
+				96B0D560B373A91021558F25D0E118AA /* PianoPod.swift */,
+				6C8F0B36BD3FC3D7478392DB5B3007AA /* PianoPodEnvironment.swift */,
+				E2EEB2A58A3B9C829307ED7F446F8111 /* AudioManager.swift */,
+				2BBC5AE40597CB1458EA6A2CC5C06CA9 /* Model */,
+				04FB47ED476F44C97D7C25D5C40021D5 /* Pod */,
+				735358C8DE224A01AC010C24FDB1632E /* Resources */,
+				26A6FD85CBB4120B786D1C06F078D350 /* Support Files */,
+				F4019EB675C5FCCC0AC6BE8554949643 /* View */,
+			);
+			name = PianoPod;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2BBC5AE40597CB1458EA6A2CC5C06CA9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E8075A2DAC180C00F33B9D6B279AAA20 /* Note.swift */,
+				BF2B08CE5E097B38B92421CC196E32F3 /* Octave.swift */,
+			);
+			name = Model;
+			path = PianoPod/Classes/Model;
 			sourceTree = "<group>";
 		};
 		3283ACDE8FDA28796C4B777D065F5466 /* Targets Support Files */ = {
@@ -153,39 +213,31 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4F336D6E83E9FBEF279CCFDCF0AC50C5 /* PianoPod */ = {
+		582E797EC32393CDDEF357517985C00B /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E0787DF0B486A5061176AB6E39BF26AE /* ColorPickerView.swift */,
-				27D66CB6FDF07C0CC0D1CE4227D6A8A7 /* Note.swift */,
-				69752FEF255548763B2D20D586786513 /* Octave.swift */,
-				A9C42FC128BDE6DB03E21F0747F7303A /* PianoKeyView.swift */,
-				E10859D8785DE3EF77B77A338FA52452 /* PianoPod.swift */,
-				276D2F134E9660D2CB2308AB529D5FCF /* PianoView.swift */,
-				5A7A23BD5876B9B826E6FD59A078EB01 /* SettingsView.swift */,
-				70E3DC2C65D787F975061468B2889D65 /* Pod */,
-				2C0693DD5F5C7C62FB8CB125A8DE22E9 /* Support Files */,
-			);
-			name = PianoPod;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		6851868CE4D72A53C8191182159A0755 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4F336D6E83E9FBEF279CCFDCF0AC50C5 /* PianoPod */,
+				29E3D14AB337D1196F8C650DDCB08E19 /* PianoPod */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		70E3DC2C65D787F975061468B2889D65 /* Pod */ = {
+		72B5802F33B1136AA7F6CBF57745A034 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CD5C5476519864A327D053E7317E7BA6 /* LICENSE */,
-				926B51DFF541586916E7350E14CD1859 /* PianoPod.podspec */,
-				5F1796F8AAAAE9F5219A0B5358C804BE /* README.md */,
+				76A56BA82956E11658BBA19FDAC9E8E5 /* PianoPod.bundle */,
+				11590B5CEAFFEC40CC3068B7FC4AEF72 /* PianoPod.framework */,
+				7D98F1085D18A9701DDAC788B34C9978 /* Pods_PianoPod_Example.framework */,
+				E0C67F046D1FFC6533EC60701642CDB9 /* Pods_PianoPod_Tests.framework */,
 			);
-			name = Pod;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		735358C8DE224A01AC010C24FDB1632E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D7AF19AED4535D73978537C5705E647 /* c_0.mp3 */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		AFDD4745D926B066FE18002E85348B8A /* Pods-PianoPod_Tests */ = {
@@ -216,9 +268,9 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				6851868CE4D72A53C8191182159A0755 /* Development Pods */,
+				582E797EC32393CDDEF357517985C00B /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				E8D54A4D1AA9783D69FC68534D6F36A2 /* Products */,
+				72B5802F33B1136AA7F6CBF57745A034 /* Products */,
 				3283ACDE8FDA28796C4B777D065F5466 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -231,27 +283,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E8D54A4D1AA9783D69FC68534D6F36A2 /* Products */ = {
+		F4019EB675C5FCCC0AC6BE8554949643 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				11590B5CEAFFEC40CC3068B7FC4AEF72 /* PianoPod.framework */,
-				7D98F1085D18A9701DDAC788B34C9978 /* Pods_PianoPod_Example.framework */,
-				E0C67F046D1FFC6533EC60701642CDB9 /* Pods_PianoPod_Tests.framework */,
+				B6FA25B48B979810CD3D422A88909D7B /* ColorPickerView.swift */,
+				332B82536CE42820B6A348915D1AF684 /* PianoKeyView.swift */,
+				0D5C13A675A20F9077B4C8F3DC757349 /* PianoView.swift */,
+				A158AFD4C645673396862B782F334E7D /* SettingsView.swift */,
 			);
-			name = Products;
+			name = View;
+			path = PianoPod/Classes/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0B700DA95D2DB50C968C3521526FE01B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E2757B3782B3B1470058A780765B4954 /* PianoPod-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		45A2BE5C341BBE12D6A2FF33C216F7BA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -268,21 +314,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D875CFE6B5FA63DD8A9927807CB60EC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				907836E2705E0292A81B58AB9A1F2427 /* PianoPod-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		20347FFF2BBAB14306E5326C2B45691E /* PianoPod */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19B41D4FB790438B858AAE053672CF05 /* Build configuration list for PBXNativeTarget "PianoPod" */;
+			buildConfigurationList = 32B2C1C0391C44F6430D4B78D3F2488A /* Build configuration list for PBXNativeTarget "PianoPod" */;
 			buildPhases = (
-				0B700DA95D2DB50C968C3521526FE01B /* Headers */,
-				0A569141D96CCFCB9729DE9353781767 /* Sources */,
-				6A08245A11052D6B9E6E0C6C10F3906B /* Frameworks */,
-				1128CCF513D492B4F9FB7AB3AD2C83A9 /* Resources */,
+				D875CFE6B5FA63DD8A9927807CB60EC9 /* Headers */,
+				B8F378E760745ECCD3EEDB808BFD8210 /* Sources */,
+				D2CBE7F196C04BD0ED31B93621F7128A /* Frameworks */,
+				1D8B46C41D0D3D1B4FA3997094426B10 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CBB5DB25C780BE987891A567D633D4F2 /* PBXTargetDependency */,
 			);
 			name = PianoPod;
 			productName = PianoPod;
@@ -307,6 +362,23 @@
 			productName = "Pods-PianoPod_Example";
 			productReference = 7D98F1085D18A9701DDAC788B34C9978 /* Pods_PianoPod_Example.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		62F00F0252A092DDD3D881A14FAA00EC /* PianoPod-PianoPod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B9BA174887C5CA1F2F6A0DE95F5E03 /* Build configuration list for PBXNativeTarget "PianoPod-PianoPod" */;
+			buildPhases = (
+				87008282DE97D3725AD6C76C443EA163 /* Sources */,
+				5220403FABAC5DB35969E8D9AE9EC0CD /* Frameworks */,
+				1B2897692BE09EE323EA1CB25A0F9B48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PianoPod-PianoPod";
+			productName = "PianoPod-PianoPod";
+			productReference = 76A56BA82956E11658BBA19FDAC9E8E5 /* PianoPod.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		711503753605A39AA9C1B10B0C7D2CE9 /* Pods-PianoPod_Tests */ = {
 			isa = PBXNativeTarget;
@@ -345,11 +417,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = E8D54A4D1AA9783D69FC68534D6F36A2 /* Products */;
+			productRefGroup = 72B5802F33B1136AA7F6CBF57745A034 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				20347FFF2BBAB14306E5326C2B45691E /* PianoPod */,
+				62F00F0252A092DDD3D881A14FAA00EC /* PianoPod-PianoPod */,
 				20493A52A9AA5012B0E532437EC87006 /* Pods-PianoPod_Example */,
 				711503753605A39AA9C1B10B0C7D2CE9 /* Pods-PianoPod_Tests */,
 			);
@@ -364,17 +437,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1128CCF513D492B4F9FB7AB3AD2C83A9 /* Resources */ = {
+		1918C5FDA1C4FD24B023F1A6F6957165 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1918C5FDA1C4FD24B023F1A6F6957165 /* Resources */ = {
+		1B2897692BE09EE323EA1CB25A0F9B48 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FF08E203B4621B082376329AA3A1323 /* c_0.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D8B46C41D0D3D1B4FA3997094426B10 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3577A5C6A574A4D7F3635BEFD9C93917 /* PianoPod.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,26 +471,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A569141D96CCFCB9729DE9353781767 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				32F3DB8E32004EB2C8C00DEEAF7D0FE3 /* ColorPickerView.swift in Sources */,
-				5FE7F1FA9C7EE71AA73C33D055D71A6B /* Note.swift in Sources */,
-				11841A8D2DC1CD3EFC003B4FE787B1A6 /* Octave.swift in Sources */,
-				4B6F9E0C17ECC1A308107CE98DCDB5EB /* PianoKeyView.swift in Sources */,
-				0C50BD3FAE28219BF6E4356F4BF238C5 /* PianoPod-dummy.m in Sources */,
-				B7C117CF22EC3EFEA16F83280D561F01 /* PianoPod.swift in Sources */,
-				1A1F5BCC56DE59C784956E06D65B8F6A /* PianoView.swift in Sources */,
-				B75139BD2931E3D8ADF8D31AC644E7C0 /* SettingsView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		3943814884DE48EB8BDAB0EAAD22E506 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				45451B2C9AA2FDA7119D894C83219201 /* Pods-PianoPod_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87008282DE97D3725AD6C76C443EA163 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B8F378E760745ECCD3EEDB808BFD8210 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85832843F365B301F93EE89528D988EE /* AudioManager.swift in Sources */,
+				C5BB26CBECEFD4B0EE20D24C42BEF59D /* ColorPickerView.swift in Sources */,
+				9041C86617F326FA0D7759179BC52541 /* Note.swift in Sources */,
+				2689152930304CDF4151F40705F53D46 /* Octave.swift in Sources */,
+				52446718414ABC73987321ACB7D1AFE2 /* PianoKeyView.swift in Sources */,
+				C8AA9FEF91F09044EF23365185F733D0 /* PianoPod-dummy.m in Sources */,
+				B156F9498BC26355DF3461A9B2437C05 /* PianoPod.swift in Sources */,
+				D4E95D207D1F3C88093A5A51382F1A0C /* PianoPodEnvironment.swift in Sources */,
+				24C879780050867850197D8284BA2EAA /* PianoView.swift in Sources */,
+				A5287172F20516ACBB9922FB99908406 /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +517,12 @@
 			name = "Pods-PianoPod_Example";
 			target = 20493A52A9AA5012B0E532437EC87006 /* Pods-PianoPod_Example */;
 			targetProxy = 648F0F9B2CE37D61D87D4648596238FC /* PBXContainerItemProxy */;
+		};
+		CBB5DB25C780BE987891A567D633D4F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PianoPod-PianoPod";
+			target = 62F00F0252A092DDD3D881A14FAA00EC /* PianoPod-PianoPod */;
+			targetProxy = A29A10D99ED132864FA5BE590067ECBF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -483,16 +580,65 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		4D9919AE627EC69ECE1657511EFB1077 /* Release */ = {
+		3DD7724E8D7BA9ADD35252919355D4CB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4BA9B0070D2AAEAD53F735026B9DA4DD /* PianoPod.release.xcconfig */;
+			baseConfigurationReference = 1B9E2508038E94953895C431CDF0D769 /* PianoPod.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PianoPod/PianoPod-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PianoPod/PianoPod-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PianoPod/PianoPod.modulemap";
+				PRODUCT_MODULE_NAME = PianoPod;
+				PRODUCT_NAME = PianoPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B42412E8E4AF6D2A6B391899C5CDC47 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B9E2508038E94953895C431CDF0D769 /* PianoPod.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PianoPod";
+				IBSC_MODULE = PianoPod;
+				INFOPLIST_FILE = "Target Support Files/PianoPod/ResourceBundle-PianoPod-PianoPod-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = PianoPod;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		54CFE306D5CAC354F66783DDFBB7A1F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C21A4C775ACDF5C5A4A9978A1CF8C44 /* PianoPod.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -631,38 +777,22 @@
 			};
 			name = Release;
 		};
-		97563359CCABFA4F4594193FFFADC47E /* Debug */ = {
+		99132A0193E8D704BC6D8BB03E07A35A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00F289CA6E8A4FB472215F4F3F5FADFD /* PianoPod.debug.xcconfig */;
+			baseConfigurationReference = 9C21A4C775ACDF5C5A4A9978A1CF8C44 /* PianoPod.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PianoPod/PianoPod-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PianoPod/PianoPod-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/PianoPod";
+				IBSC_MODULE = PianoPod;
+				INFOPLIST_FILE = "Target Support Files/PianoPod/ResourceBundle-PianoPod-PianoPod-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PianoPod/PianoPod.modulemap";
-				PRODUCT_MODULE_NAME = PianoPod;
 				PRODUCT_NAME = PianoPod;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
-			name = Debug;
+			name = Release;
 		};
 		ADDABBA08D46ED4DCC8A8834CB251634 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -766,11 +896,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		19B41D4FB790438B858AAE053672CF05 /* Build configuration list for PBXNativeTarget "PianoPod" */ = {
+		32B2C1C0391C44F6430D4B78D3F2488A /* Build configuration list for PBXNativeTarget "PianoPod" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				97563359CCABFA4F4594193FFFADC47E /* Debug */,
-				4D9919AE627EC69ECE1657511EFB1077 /* Release */,
+				3DD7724E8D7BA9ADD35252919355D4CB /* Debug */,
+				54CFE306D5CAC354F66783DDFBB7A1F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -789,6 +919,15 @@
 			buildConfigurations = (
 				ADDABBA08D46ED4DCC8A8834CB251634 /* Debug */,
 				7A53EB3371A37AA80121A690FF3315BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B9BA174887C5CA1F2F6A0DE95F5E03 /* Build configuration list for PBXNativeTarget "PianoPod-PianoPod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B42412E8E4AF6D2A6B391899C5CDC47 /* Debug */,
+				99132A0193E8D704BC6D8BB03E07A35A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

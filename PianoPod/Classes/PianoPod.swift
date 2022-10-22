@@ -10,7 +10,10 @@ import SwiftUI
 
 public class PianoPod {
     
-    public static func pianoView(backgroundColor: Color = .white, accentColor: Color = .gray, naturalKeyColor: Color = .white, accidentalKeyColor: Color = .black, visibleOctaves: Int = 1, settingsEnabled: Bool = true) -> PianoView {
-        return PianoView(backgroundColor: backgroundColor, accentColor: accentColor, naturalKeyColor: naturalKeyColor, accidentalKeyColor: accidentalKeyColor, visibleOctaves: visibleOctaves, settingsEnabled: settingsEnabled)
+    private static var environment = PianoPodEnvironment()
+    
+    public static func pianoView(backgroundColor: Color = .white, accentColor: Color = .gray, naturalKeyColor: Color = .white, accidentalKeyColor: Color = .black, visibleOctaves: Int = 1, settingsEnabled: Bool = true) -> AnyView {
+        let pianoView = PianoView(backgroundColor: backgroundColor, accentColor: accentColor, naturalKeyColor: naturalKeyColor, accidentalKeyColor: accidentalKeyColor, visibleOctaves: visibleOctaves, settingsEnabled: settingsEnabled).environmentObject(environment)
+        return AnyView(pianoView)
     }
 }

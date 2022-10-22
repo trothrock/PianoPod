@@ -1,6 +1,6 @@
 //
 //  ColorPickerView.swift
-//  PianoPod_Example
+//  PianoPod
 //
 //  Created by Theodore Rothrock on 5/25/20.
 //  Copyright © 2020 CocoaPods. All rights reserved.

@@ -10,7 +10,7 @@ import UIKit
 import SwiftUI
 import PianoPod
 
-class ViewController: UIHostingController<PianoView> {
+class ViewController: UIHostingController<AnyView> {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder, rootView: PianoPod.pianoView(visibleOctaves: 2))

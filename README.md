@@ -4,4 +4,4 @@
 
 ## Author
 
-theodore.rothrock@gmail.com, theodore.rothrock@gmail.com
+Ted Rothrock, theodore.rothrock@gmail.com

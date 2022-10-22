@@ -1,6 +1,6 @@
 //
 //  Note.swift
-//  PianoPod_Example
+//  PianoPod
 //
 //  Created by Theodore Rothrock on 4/20/20.
 //  Copyright © 2020 CocoaPods. All rights reserved.
@@ -20,5 +20,5 @@ struct Note {
     var id: String {
         return "\(pitch.rawValue)_\(octave)"
     }
-    
+
 }

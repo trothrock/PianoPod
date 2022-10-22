@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-public struct PianoView: View {
+struct PianoView: View {
     
     var backgroundColor: Color
     var accentColor: Color
@@ -23,7 +23,7 @@ public struct PianoView: View {
     private let toolbarPadding: CGFloat  = 7
     
     private var toolbarHeight: CGFloat {
-        return toolbarControlHeight + (toolbarPadding * 2)
+        return settingsEnabled ? toolbarControlHeight + (toolbarPadding * 2) : 0
     }
     
     private var octaves: [Octave] {
@@ -34,15 +34,11 @@ public struct PianoView: View {
         return result
     }
     
-    public var body: some View {
+    var body: some View {
         GeometryReader { geometry in
             VStack(spacing: 0) {
                 if self.settingsEnabled {
-                    HStack() {
-                        Spacer()
-                        SettingsIconButton(isPresentingSettings: self.$isPresentingSettings, toolbarControlHeight: self.toolbarControlHeight, toolbarPadding: self.toolbarPadding, accentColor: self.accentColor)
-                    }
-                    .frame(height: self.toolbarHeight)
+                    SettingsHeaderView(isPresentingSettings: self.$isPresentingSettings, toolbarControlHeight: self.toolbarControlHeight, toolbarPadding: self.toolbarPadding, accentColor: self.accentColor)
                 }
                 
                 Spacer()
@@ -113,7 +109,7 @@ public struct PianoView: View {
     
 }
 
-struct SettingsIconButton: View {
+struct SettingsHeaderView: View {
     
     @Binding var isPresentingSettings: Bool
     var toolbarControlHeight: CGFloat
@@ -121,15 +117,19 @@ struct SettingsIconButton: View {
     var accentColor: Color
     
     var body: some View {
-        Button(action: {
-            self.isPresentingSettings = true
-        }, label: {
-            Image(systemName: "gear")
-                .resizable()
-        })
-        .frame(width: self.toolbarControlHeight, height: self.toolbarControlHeight)
-        .foregroundColor(self.accentColor)
-        .padding(self.toolbarPadding)
+        HStack() {
+            Spacer()
+            Button(action: {
+                self.isPresentingSettings = true
+            }, label: {
+                Image(systemName: "gear")
+                    .resizable()
+            })
+            .frame(width: self.toolbarControlHeight, height: self.toolbarControlHeight)
+            .foregroundColor(self.accentColor)
+            .padding(self.toolbarPadding)
+        }
+        .frame(height: toolbarControlHeight + (toolbarPadding * 2))
     }
     
 }

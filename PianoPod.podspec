@@ -16,5 +16,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '13.0'
 
   s.source_files = 'PianoPod/Classes/**/*'
+  s.ios.resource_bundle = { 'PianoPod' => 'PianoPod/Assets/Audio/*.mp3' }
 
 end

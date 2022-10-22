@@ -1,6 +1,6 @@
 //
 //  PianoKeyView.swift
-//  PianoPod_Example
+//  PianoPod
 //
 //  Created by Theodore Rothrock on 5/25/20.
 //  Copyright © 2020 CocoaPods. All rights reserved.
@@ -14,6 +14,7 @@ extension CGFloat {
 
 struct PianoKeyView: View {
     
+    @EnvironmentObject var environment: PianoPodEnvironment
     var note: Note
     var color: Color
     var naturalKeyWidth: CGFloat
@@ -68,7 +69,7 @@ struct PianoKeyView: View {
         let strokeColor: Color = color != .black ? .black : .white
         
         return Button(action: {
-            print("Play \(self.note.pitch.rawValue) \(self.note.octave)")
+            self.environment.audioManager.play(self.note)
         }, label: {
             PianoKeyShape(isAccidental: isAccidental, radius: radius)
                 .foregroundColor(self.color)
