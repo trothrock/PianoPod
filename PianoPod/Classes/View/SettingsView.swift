@@ -23,6 +23,7 @@ struct SettingsView: View {
                     Stepper(value: $visibleOctaves, in: 1...3, label: {
                         Text(Constants.octaveHeading)
                             .bold()
+                            .padding(.bottom, 1)
                         Text("\(visibleOctaves)")
                     })
                     .frame(height: Constants.menuItemHeight)
@@ -32,6 +33,7 @@ struct SettingsView: View {
                     Stepper(value: $bottomOctave, in: -3...3, label: {
                         Text(Constants.bottomNoteHeading)
                             .bold()
+                            .padding(.bottom, 1)
                         Text("C\(bottomOctave)")
                     })
                     .frame(height: Constants.menuItemHeight)

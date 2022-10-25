@@ -23,7 +23,7 @@ struct PianoView: View {
                 if settingsEnabled {
                     SettingsHeaderView(isPresentingSettings: $isPresentingSettings,
                                        toolbarControlHeight: Constants.toolbarControlHeight,
-                                       toolbarPadding: Constants.toolbarPadding,
+                                       toolbarVerticalPadding: Constants.toolbarVerticalPadding,
                                        accentColor: accentColor)
                 }
                 
@@ -86,14 +86,14 @@ struct PianoView: View {
     
     private enum Constants {
         static let toolbarControlHeight: CGFloat = 35
-        static let toolbarPadding: CGFloat = 7
+        static let toolbarVerticalPadding: CGFloat = 7
     }
     
     @State private var isPresentingSettings = false
     @State private var bottomOctave: Int = 0
     
     private var toolbarHeight: CGFloat {
-        return settingsEnabled ? Constants.toolbarControlHeight + (Constants.toolbarPadding * 2) : 0
+        return settingsEnabled ? Constants.toolbarControlHeight + (Constants.toolbarVerticalPadding * 2) : 0
     }
     
     private var octaves: [Octave] {
@@ -133,7 +133,7 @@ struct SettingsHeaderView: View {
     
     @Binding var isPresentingSettings: Bool
     var toolbarControlHeight: CGFloat
-    var toolbarPadding: CGFloat
+    var toolbarVerticalPadding: CGFloat
     var accentColor: Color
     
     var body: some View {
@@ -147,9 +147,9 @@ struct SettingsHeaderView: View {
             })
             .frame(width: toolbarControlHeight, height: toolbarControlHeight)
             .foregroundColor(accentColor)
-            .padding(toolbarPadding)
+            .padding([.trailing], 16)
         }
-        .frame(height: toolbarControlHeight + (toolbarPadding * 2))
+        .frame(height: toolbarControlHeight + (toolbarVerticalPadding * 2))
     }
     
 }
@@ -157,10 +157,10 @@ struct SettingsHeaderView: View {
 struct PianoView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            PianoView(backgroundColor: .purple,
-                      accentColor: .white,
-                      naturalKeyColor: .yellow,
-                      accidentalKeyColor: .pink)
+            PianoView(backgroundColor: .white,
+                      accentColor: .gray,
+                      naturalKeyColor: .white,
+                      accidentalKeyColor: .black)
               .previewDevice(PreviewDevice(rawValue: "iPhone 14 Pro"))
               .previewDisplayName("iPhone 14 Pro")
         }
